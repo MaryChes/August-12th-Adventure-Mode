@@ -26,11 +26,16 @@ public class PlayRockScissorsSpock
 			{
 			System.out.println("Welcome " + userName + "! It's time to choose your opponent");
 			System.out.println("Would you like to throw down with:"
-				+ "\n\tBeth"
 				+ "\n\tAdam"
+				+ "\n\tAmy"
+				+ "\n\tBeth"
+				+ "\n\tBill"
+				+ "\n\tDavid"
+				+ "\n\tJoe"
+				+ "\n\tJohn"
+				+ "\n\tPaul"
+				+ "\n\tThomas"
 				+ "\n\tTucker");
-			
-			
 				 opponentChoice = userInput.nextLine();
 			} 
 			while (Validation.isValidOpponent(opponentChoice));
@@ -41,9 +46,9 @@ public class PlayRockScissorsSpock
 			System.out.println("Would you like to throw:"
 				+ "\n\tRock"
 				+ "\n\tPaper"
-				+ "\n\tScissors?"
+				+ "\n\tScissors"
 				+ "\n\tLizard"
-				+ "\n\tSpock");
+				+ "\n\tSpock?");
 			
 			
 			userChoice = userInput.nextLine().toUpperCase();
@@ -68,10 +73,59 @@ public class PlayRockScissorsSpock
 		
 				case "TUCKER":
 					Tucker tuckerInArena = new Tucker();
-				opponentThrow = tuckerInArena.getTuckersChoice();
-				System.out.println(userName + ", you picked " + userChoice + "."
-				+"\n" + opponentChoice + " picked " + opponentThrow + ".");
-				break;  
+					opponentThrow = tuckerInArena.getTuckersChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break;  
+				
+				case "AMY":
+					Amy amyInArena = new Amy();
+					opponentThrow = amyInArena.getAmysChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
+					
+				case "BILL":
+					Bill billInArena = new Bill();
+					opponentThrow = billInArena.getBillsChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
+					
+				case "DAVID":
+					David davidInArena = new David();
+					opponentThrow = davidInArena.getDavidsChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
+					
+				case "JOE":
+					Joe joeInArena = new Joe();
+					opponentThrow = joeInArena.getJoesChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
+					
+				case "JOHN":
+					John johnInArena = new John();
+					opponentThrow = johnInArena.getJohnsChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
+					
+				case "PAUL":
+					Paul paulInArena = new Paul();
+					opponentThrow = paulInArena.getPaulsChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
+				
+				case "THOMAS":
+					Thomas thomasInArena = new Thomas();
+					opponentThrow = thomasInArena.getThomassChoice();
+					System.out.println(userName + ", you picked " + userChoice + "."
+					+"\n" + opponentChoice + " picked " + opponentThrow + ".");
+					break; 
 			}
 		
 			String arenaOutcome = model.getGameOutcome(userChoice, opponentThrow);

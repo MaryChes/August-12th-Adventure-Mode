@@ -6,7 +6,7 @@ public final class Validation
 	public static boolean isValidOpponent(String opponentChoice)
 	{
 		boolean validSelection = true;
-		String[] validEntries = {"Tucker", "Beth", "Adam"};
+		String[] validEntries = {"Tucker", "Beth", "Adam", "Amy", "Bill", "David", "Joe", "John", "Paul", "Thomas"};
 	
 		for (int i = 0; i < validEntries.length; i++)
 		{
