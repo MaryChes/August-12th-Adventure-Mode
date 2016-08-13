@@ -18,7 +18,7 @@ public class PlayRockScissorsSpock
 		
 		do
 		{
-			System.out.println("Welcome to the ROCK SCISSORS SPOCK Arena. I hope you are ready to throw down!!!");
+			System.out.println("Welcome to the ROCK PAPER SCISSORS LIZARD SPOCK Arena. I hope you are ready to throw down!!!");
 			System.out.println("Please enter your name");
 			String userName = userInput.nextLine().toUpperCase();
 			
